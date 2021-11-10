@@ -20,9 +20,9 @@ namespace EditorHTML
             Menu.Show();
         }
 
-        public static void Replace(string text)
+        public static void Replace(string text) // Function that converts text to bold
         {
-            var strong = new Regex(@"<\s*strong[^>]*>(.*?)<\s*/\s*strong>");
+            var strong = new Regex(@"<\s*strong[^>]*>(.*?)<\s*/\s*strong>"); // <strong><\strong> 
             var words = text.Split(' ');
             for (var i = 0; i < words.Length; i++)
             {
