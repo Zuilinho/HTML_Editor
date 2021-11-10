@@ -17,7 +17,7 @@ namespace EditorHTML
             var option = short.Parse(Console.ReadLine());
             HandleMenuOption(option);
         }
-        public static void DrawScreen()
+        public static void DrawScreen() // Function that draw the menu 
         {
             Console.Write("+");
             for (int i = 0; i <= 25; i++)
@@ -45,7 +45,7 @@ namespace EditorHTML
             }
             Console.Write("+");
         }
-        public static void WriteOptions()
+        public static void WriteOptions() // Function that draw the options
         {
             Console.SetCursorPosition(2, 0);
             Console.WriteLine("HTML Editor");
@@ -64,7 +64,7 @@ namespace EditorHTML
 
         }
 
-        public static void HandleMenuOption(short option)
+        public static void HandleMenuOption(short option) // Function that detects the chosen option
         {
             switch (option)
             {
